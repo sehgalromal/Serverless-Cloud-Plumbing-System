@@ -1,24 +1,22 @@
-# Canada Tourism Application 
+# Serverless Cloud Plumbing System (DevOps) 
 
-The cloud5409_TourismApp is Web and Mobile application which helps tourist to search for location with ease and book a ticket to that location. The system is light weight and secure mobile and web client, developed using cloud computing conventions and methods and is hosted on Amazon Web Services.The application provides users to search popular tourist destinations that will result the information of provincial/national parks, major beaches and popular cities nearby. The application has a booking services for the users to reserve their seat on the tourist bus that will cover all the tourist points. 
-
-The project is a thin application where all the back-end operations, validations and other computations (such as scaling/load balancing) is be performed on AWS cloud. The application communicates with the cloud via API calls to microservices.
+The Serverless Cloud Plumbing System is a learning management system that follows the multi cloud deployment model.Our system can be configured based on the University requirements and is equipped with many services for students and instructors. The system is designed using serverless technologies to process data and uses different back-end cloud services including Amazon Web Services and Google Cloud Platform. The project is built using various technologies React JS, Node js and Python.   
 
 
 * Date Created: 03 30 2020
 * Last Modification Date: 08 13 2020
 
-### Author
+### Authors
 
 * Romal Sehgal 
-* Hardik Dudhrejia 
-* Darpan Patel 
-* Vikash Salvi Manharlal 
+* Ram Prasath Meganathan 
+* Sai Pavan Akuralapu 
+* Shivam Gupta
 
 
 ### Architecture 
 
-![alt text](https://github.com/sehgalromal/CanadaTourismApplication/blob/master/Projects-Assets-Screenshots/image7.jpg?raw=true)
+![alt text](https://github.com/sehgalromal/Serverless-Cloud-Plumbing-System/blob/master/Architecture_Screenshots/Overall_Architecture.png)
 
 The architecture above explains how the application works by communicating with many other services internally. The user can access either web application or the mobile application. The application load balancer handles all the incoming traffic to the application., this load balancer is provided by Elastic Container Service. The load balancer internally also has a auto scaling feature where based on the metric provided by us it creates new instances of docker and shifts the load to the appropriate service. All the docker are instantiated by Elastic Bean Stalk, the EBS hosts multi container docker based on the Docker Aws configuration provided. Each docker instance represents a single microservice running on it. The AWS Cognito is used for user authentication and management and the DynamoDB is used for data store. 
 
