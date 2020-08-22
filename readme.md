@@ -39,6 +39,8 @@ All the modules of the system are de-coupled and have no dependency among each o
 
 ### User Management Module GCP Firestore and Amazon RDS
 
+#### Event Driven Archiecture
+
 ![alt text](https://github.com/sehgalromal/Serverless-Cloud-Plumbing-System/blob/master/Architecture_Screenshots/signup.png)
 
 
@@ -47,11 +49,15 @@ This feature provide users the flexibility to sign up using their email account 
 
 ### User Authentication Module using Amazon Cognito 
 
+#### Event Driven Archiecture
+
 ![alt text](https://github.com/sehgalromal/Serverless-Cloud-Plumbing-System/blob/master/Architecture_Screenshots/image18.png)
 	   
 This feature uses OAuth2.0 feature of Google cloud. It allows the users to sign in with their google account details and does token-based authentication using OpenID Connect tokens. For the user authentication module, we have used AWS Lambda, Amazon Cognito, Amazon RDS, GCP Cloud functions, and GCP Cloud Firestore.  
 
 ### Online Support Module using Amazon Lex 
+
+#### Event Driven Archiecture
 
 ![alt text](https://github.com/sehgalromal/Serverless-Cloud-Plumbing-System/blob/master/Architecture_Screenshots/image18.png)
 
@@ -59,6 +65,8 @@ This module provides basic assistance services to the users. Based on use case r
 
 
 ### Instant Messaging module using Amazon Pub/Sub
+
+#### Event Driven Archiecture
 
 ![alt text](https://github.com/sehgalromal/Serverless-Cloud-Plumbing-System/blob/master/Architecture_Screenshots/image40.png)
 
@@ -68,11 +76,15 @@ Chat module has been implemented by using WebSockets API present in API Gateway 
 
 ### Data Processing Module using Google Cloud Run 
 
+#### Event Driven Archiecture
+
 ![alt text](https://github.com/sehgalromal/Serverless-Cloud-Plumbing-System/blob/master/Architecture_Screenshots/image50.png)
 
 This module provide the users a word cloud of the upper-case entities based on the file uploaded by the user. It uses the combination of NLTK library and  a function deployed inside Cloud Run Docker container that extracts information from files and use them for word cloud. Based on the context of the sentences present in the document, named entities are fetched and then word cloud is formed. 
 
 ### Machine Learning Module using GCP AI
+
+#### Event Driven Archiecture
 
 ![alt text](https://github.com/sehgalromal/Serverless-Cloud-Plumbing-System/blob/master/Architecture_Screenshots/image55.png)
 
@@ -80,6 +92,8 @@ This module provide the functionality to classify and store the files in a speci
 
 
 ### Sentiment Analysis using Amazon Comprehend 
+
+#### Event Driven Archiecture
 
 ![alt text](https://github.com/sehgalromal/Serverless-Cloud-Plumbing-System/blob/master/Architecture_Screenshots/image67.png)
 
